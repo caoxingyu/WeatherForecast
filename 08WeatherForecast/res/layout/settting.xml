@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_margin="20dp">
+    
+    <TextView android:id="@+id/tv1"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="城市名称："/>
+    <EditText android:id="@+id/city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv1"
+        android:layout_alignBottom="@id/tv1"/>
+     <TextView android:id="@+id/tv2"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:text="更新频率(秒/次)："/>
+    <EditText android:id="@+id/refresh_rate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv2"
+        android:layout_alignBottom="@id/tv2"/>
+
+    <Button
+        android:id="@+id/save_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+       
+        android:text="保存设置" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/save_settings"
+        android:layout_alignBottom="@+id/save_settings"
+        android:layout_alignParentRight="true"
+      
+        android:text="返回" />
+ 
+</RelativeLayout>
